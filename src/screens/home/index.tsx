@@ -5,22 +5,11 @@ import {
   Image,
   Text,
   TouchableOpacity,
-  Alert,
 } from 'react-native'
 import { BG, Driver, Logo, Passenger } from '../../constants/icons'
-import { StackScreenProps } from '@react-navigation/stack'
+import { ScreenProps } from '../../constants/type'
 
-// Definição dos tipos das rotas
-type RootStackParamList = {
-  home: undefined
-  passenger: undefined
-  ride: undefined
-  'ride-detail': undefined
-}
-
-type HomeScreenProps = StackScreenProps<RootStackParamList>
-
-const Home: React.FC<HomeScreenProps> = ({ navigation }) => {
+const Home: React.FC<ScreenProps> = ({ navigation }) => {
   const OpenPassenger = () => {
     navigation.navigate('passenger')
   }

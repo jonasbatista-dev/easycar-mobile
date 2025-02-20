@@ -48,7 +48,7 @@ const Passenger: React.FC = () => {
           <TextInput style={styles.input} />
         </View>
       </View>
-      <Button text="Confirmar" type="yellow" color="white" />
+      <Button text="Confirmar" />
     </View>
   )
 }
